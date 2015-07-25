@@ -1,0 +1,93 @@
+Xft.dpi:                   96
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+ 
+URxvt.fading:               15
+!Set URxvt.depth: 32  for transparent background, 0 for nothing - URxvt.background: [85]#2d2d2d  -  Not used - using transset and devilspie for URxvt transparency to work with ranger and w3m image preview
+!URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.urgentOnBell:         true
+URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:	    	65535
+URxvt.internalBorder:       1
+!URxvt.borderColor:      #b72f62
+URxvt.lineSpace:            0
+urxvt*shading:    	    	95
+urxvt*transparent:          false
+URxvt.iso14755:            	false
+URxvt*letterSpace: 	   		-1
+URxvt*borderLess:	    	false
+
+! Fonts
+URxvt.allow_bold:           false
+URxvt*font:            	xft:Roboto Mono-8
+
+!Clipboard
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+ 
+! Scrollbar
+URxvt.scrollStyle:          plain
+URxvt.scrollBar:            false
+URxvt*scrollTtyOutput:      false
+URxvt*scrollBar_right: 	    true
+ 
+! Perl extensions
+URxvt.perl-ext-common:      default,tabbedex,matcher,clipboard
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+! Tabs
+URxvt.tabbed.autohide:      true
+URxvt.tabbed.reopen-on-close: no
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+URxvt.tabbed.no-tabbedex-keys: true
+ 
+! Cursor
+*.cursorBlink:          true
+*.cursorUnderline:      false
+ 
+! Pointer
+*.pointerBlank:         true
+
+! special
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
+
+! black
+*.color0:       #282a2e
+*.color8:       #373b41
+
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
